@@ -9,3 +9,5 @@ spring:
 security:
   basic:
     enabled: false
+server:
+  port: 90
