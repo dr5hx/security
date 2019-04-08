@@ -11,3 +11,7 @@ security:
     enabled: true
 server:
   port: 8080
+dr5hx:
+  security:
+    browser:
+      loginPage: /demo_login.html
