@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.concurrent.Callable;
 //import java.util.logging.Logger;
@@ -34,6 +33,7 @@ public class OrderController {
             log.info("进入副线程结束");
             return "result";
         };
+
         Thread thread = new Thread(() ->
                 log.info("aaa")
         );
