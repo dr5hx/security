@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    include: security
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/qrcode?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,7 +13,3 @@ security:
     enabled: true
 server:
   port: 8080
-dr5hx:
-  security:
-    browser:
-      loginPage: /demo_login.html

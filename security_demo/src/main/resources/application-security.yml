@@ -1,0 +1,4 @@
+dr5hx:
+  security:
+    browser:
+      loginPage: /demo_login.html
